@@ -1,0 +1,55 @@
+{
+  "version": "0",
+  "id": "b2fc87e5-65ba-c5e1-85bb-bd579a44ef7f",
+  "detail-type": "AWS API Call via CloudTrail",
+  "source": "aws.s3",
+  "account": "324320755747",
+  "time": "2020-05-22T03:32:52Z",
+  "region": "us-west-2",
+  "resources": [],
+  "detail": {
+    "eventVersion": "1.05",
+    "userIdentity": {
+      "type": "IAMUser",
+      "principalId": "AIDAJXFTOSW545TU5E722",
+      "arn": "arn:aws:iam::324320755747:user/tim.baileyjones.labs",
+      "accountId": "324320755747",
+      "accessKeyId": "ASIAUXAYGAARSIDAFYIQ",
+      "userName": "tim.baileyjones.labs",
+      "sessionContext": {
+        "attributes": {
+          "mfaAuthenticated": "true",
+          "creationDate": "2020-05-22T02:25:48Z"
+        }
+      }
+    },
+    "eventTime": "2020-05-22T03:32:52Z",
+    "eventSource": "s3.amazonaws.com",
+    "eventName": "CreateBucket",
+    "awsRegion": "us-west-2",
+    "sourceIPAddress": "173.168.188.45",
+    "userAgent": "[aws-sdk-go/1.31.2 (go1.13.7; linux; amd64) APN/1.0 HashiCorp/1.0 Terraform/0.12.24 (+https://www.terraform.io)]",
+    "requestParameters": {
+      "CreateBucketConfiguration": {
+        "LocationConstraint": "us-west-2",
+        "xmlns": "http://s3.amazonaws.com/doc/2006-03-01/"
+      },
+      "bucketName": "timba-dev6-test-log-bucket-1",
+      "x-amz-acl": [
+        "private"
+      ],
+      "host": [
+        "timba-dev6-test-log-bucket-1.s3.us-west-2.amazonaws.com"
+      ]
+    },
+    "responseElements": null,
+    "additionalEventData": {
+      "SignatureVersion": "SigV4",
+      "CipherSuite": "ECDHE-RSA-AES128-GCM-SHA256",
+      "AuthenticationMethod": "AuthHeader"
+    },
+    "requestID": "598640123BD580CE",
+    "eventID": "207930d4-e2d1-456a-801d-0674cd38b440",
+    "eventType": "AwsApiCall"
+  }
+}
